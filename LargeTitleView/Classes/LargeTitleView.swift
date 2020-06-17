@@ -30,7 +30,7 @@ open class LargeTitleView: UIView {
     }
     
     public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     public func registerFatherView(_ scrollView: UIScrollView?) {
@@ -42,7 +42,8 @@ open class LargeTitleView: UIView {
         
     }
     
-    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         if let initY = initialOffsetY, let newPoint = change?[.newKey] as? CGPoint{
             let offsetY = initY - newPoint.y
 //            print("initY:\(initY) --- newPoint.y:\(newPoint.y) -- offsetY:\(offsetY)")
