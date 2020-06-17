@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LargeTitleView: UIView {
+open class LargeTitleView: UIView {
 
     var title: String?
     private var customLargeTitleLabel: UILabel?
