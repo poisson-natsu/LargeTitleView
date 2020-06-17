@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LargeTitleView_Example' do
+  pod 'LargeTitleView', :path => '../'
+
+  target 'LargeTitleView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
