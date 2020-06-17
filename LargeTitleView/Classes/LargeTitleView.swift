@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LargeTitleView: UIView {
+open class LargeTitleView: UIView {
 
     var title: String?
     private var customLargeTitleLabel: UILabel?
@@ -16,9 +16,9 @@ public class LargeTitleView: UIView {
     private var initialOffsetY: CGFloat?
     let largeTitleHeight: CGFloat = 80
     let initialFontSize: CGFloat = 32
-    public let largeTitleY: CGFloat = 40
+    private let largeTitleY: CGFloat = 40
     
-    init(title: String) {
+    public init(title: String) {
         self.title = title
         super.init(frame: CGRect.init(x: 20, y: largeTitleY, width: UIScreen.main.bounds.size.width, height: largeTitleHeight))
         configLabel()
@@ -37,7 +37,7 @@ public class LargeTitleView: UIView {
         fatherView?.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
     }
     
-    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if let initY = initialOffsetY, let newPoint = change?[.newKey] as? CGPoint{
             let offsetY = initY - newPoint.y
 //            print("initY:\(initY) --- newPoint.y:\(newPoint.y) -- offsetY:\(offsetY)")
@@ -76,8 +76,12 @@ public class LargeTitleView: UIView {
         }
     }
     
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     // MARK: largeTitleLabel
