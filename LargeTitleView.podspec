@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  You can use the Large Title effects in below iOS11, but when it's iOS11 or above, please use the origin func
                        DESC
 
   s.homepage         = 'https://github.com/poisson-natsu/LargeTitleView'
