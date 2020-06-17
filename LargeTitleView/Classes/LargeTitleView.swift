@@ -16,7 +16,7 @@ public class LargeTitleView: UIView {
     private var initialOffsetY: CGFloat?
     let largeTitleHeight: CGFloat = 80
     let initialFontSize: CGFloat = 32
-    private let largeTitleY: CGFloat = 40
+    public let largeTitleY: CGFloat = 40
     
     init(title: String) {
         self.title = title
@@ -76,7 +76,7 @@ public class LargeTitleView: UIView {
         }
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
