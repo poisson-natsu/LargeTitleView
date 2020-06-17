@@ -29,6 +29,10 @@ open class LargeTitleView: UIView {
         configLabel()
     }
     
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public func registerFatherView(_ scrollView: UIScrollView?) {
         fatherView = scrollView
 //        initialOffsetY = fatherView?.contentOffset.y
@@ -77,9 +81,6 @@ open class LargeTitleView: UIView {
         }
     }
     
-    public required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
     
     deinit {
         NotificationCenter.default.removeObserver(self)
