@@ -32,7 +32,6 @@
 		0924075C2499A8050068617F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		15FAB460F748B09D31D8D309 /* Pods_LargeTitleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LargeTitleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LargeTitleView.podspec; path = ../LargeTitleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		360737D9A825AAA611FA5D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		36D2A52392A0E9D29D3C20F8 /* Pods-LargeTitleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Tests.release.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Tests/Pods-LargeTitleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5089EECD8DF59F7ACC79DC54 /* Pods-LargeTitleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Example.debug.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Example/Pods-LargeTitleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LargeTitleView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LargeTitleView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +136,6 @@
 			children = (
 				1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */,
 				931A57E465484C20782B3F4A /* README.md */,
-				360737D9A825AAA611FA5D05 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
