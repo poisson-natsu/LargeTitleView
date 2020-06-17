@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0924075D2499A8050068617F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0924075C2499A8050068617F /* NavigationController.swift */; };
 		254E8EF5C9CFDF498062A890 /* Pods_LargeTitleView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B3D5B38FDD2533E6E3A96B /* Pods_LargeTitleView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,9 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0924075C2499A8050068617F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		15FAB460F748B09D31D8D309 /* Pods_LargeTitleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LargeTitleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LargeTitleView.podspec; path = ../LargeTitleView.podspec; sourceTree = "<group>"; };
-		360737D9A825AAA611FA5D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LargeTitleView.podspec; path = ../LargeTitleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		360737D9A825AAA611FA5D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		36D2A52392A0E9D29D3C20F8 /* Pods-LargeTitleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Tests.release.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Tests/Pods-LargeTitleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5089EECD8DF59F7ACC79DC54 /* Pods-LargeTitleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Example.debug.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Example/Pods-LargeTitleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LargeTitleView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LargeTitleView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +47,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		73B3D5B38FDD2533E6E3A96B /* Pods_LargeTitleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LargeTitleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		894D517CD6AC19DA7E81CE6E /* Pods-LargeTitleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Example.release.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Example/Pods-LargeTitleView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		931A57E465484C20782B3F4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		931A57E465484C20782B3F4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CBCEFE946203EBC5BF01F18A /* Pods-LargeTitleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Tests/Pods-LargeTitleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				0924075C2499A8050068617F /* NavigationController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +159,6 @@
 				CBCEFE946203EBC5BF01F18A /* Pods-LargeTitleView_Tests.debug.xcconfig */,
 				36D2A52392A0E9D29D3C20F8 /* Pods-LargeTitleView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0924075D2499A8050068617F /* NavigationController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,6 @@
+framework module Pods_LargeTitleView_Example {
+  umbrella header "Pods-LargeTitleView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
