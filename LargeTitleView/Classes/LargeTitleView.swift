@@ -29,7 +29,7 @@ open class LargeTitleView: UIView {
         configLabel()
     }
     
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -42,7 +42,7 @@ open class LargeTitleView: UIView {
         
     }
     
-    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if let initY = initialOffsetY, let newPoint = change?[.newKey] as? CGPoint{
             let offsetY = initY - newPoint.y
 //            print("initY:\(initY) --- newPoint.y:\(newPoint.y) -- offsetY:\(offsetY)")
