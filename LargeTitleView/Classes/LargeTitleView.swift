@@ -35,9 +35,10 @@ open class LargeTitleView: UIView {
 //        print("initial:\(fatherView?.contentOffset.y)")
         initialOffsetY = -44 // TODO
         fatherView?.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
+        
     }
     
-    internal override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if let initY = initialOffsetY, let newPoint = change?[.newKey] as? CGPoint{
             let offsetY = initY - newPoint.y
 //            print("initY:\(initY) --- newPoint.y:\(newPoint.y) -- offsetY:\(offsetY)")
