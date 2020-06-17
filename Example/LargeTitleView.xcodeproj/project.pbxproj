@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0924075D2499A8050068617F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0924075C2499A8050068617F /* NavigationController.swift */; };
+		0924078D2499B24A0068617F /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 0924078C2499B2490068617F /* LICENCE */; };
 		254E8EF5C9CFDF498062A890 /* Pods_LargeTitleView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B3D5B38FDD2533E6E3A96B /* Pods_LargeTitleView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0924075C2499A8050068617F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		0924078C2499B2490068617F /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
 		15FAB460F748B09D31D8D309 /* Pods_LargeTitleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LargeTitleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LargeTitleView.podspec; path = ../LargeTitleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		36D2A52392A0E9D29D3C20F8 /* Pods-LargeTitleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LargeTitleView_Tests.release.xcconfig"; path = "Target Support Files/Pods-LargeTitleView_Tests/Pods-LargeTitleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				1B610EA7CC1EF85BA57AA7F1 /* LargeTitleView.podspec */,
 				931A57E465484C20782B3F4A /* README.md */,
+				0924078C2499B2490068617F /* LICENCE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				0924078D2499B24A0068617F /* LICENCE in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
